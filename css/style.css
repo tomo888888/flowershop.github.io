@@ -435,15 +435,26 @@ a {
 }
 
 .lesson-image-wrap {
+  position: relative;
   width: min(620px, 100%);
-  margin: 28px auto 64px;
+  margin: 48px auto 90px;
 }
 
 .lesson-image-wrap img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 12px;
+}
+
+.lesson-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #efb972;
+  transform: rotate(-10deg) translate(-10px, 14px);
+  filter: blur(20px);
+  z-index: -1; /* ← 影を画像の後ろへ確実に配置 */
+  opacity: 0.55;
 }
 
 .lesson-form {
