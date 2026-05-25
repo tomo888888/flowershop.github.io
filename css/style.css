@@ -206,14 +206,14 @@ a {
 }
 
 .order-section h1 {
-  margin: 0 auto 16px;
   display: inline-block;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #555;
-  padding: 0 36px 4px;
-  border-bottom: 2px solid #555;
+  margin: 0 auto 32px;
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  color: #3f362f;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #3f362f;
+  text-align: center;
 }
 
 .order-visual {
@@ -298,21 +298,17 @@ a {
   margin-left: 2px;
 }
 
-.order-form.product-order-form label,
-.order-form.product-order-form legend {
+.product-order-form label,
+.product-order-form legend {
   margin: 4px 0 1px;
   font-size: 16px;
 }
 
-.order-form.product-order-form input[type="text"],
-.order-form.product-order-form input[type="tel"],
-.order-form.product-order-form input[type="email"] {
+.product-order-form input[type="text"],
+.product-order-form input[type="tel"],
+.product-order-form input[type="email"] {
   height: 31px;
   padding: 2px 8px;
-}
-
-.product-order-form .form-actions {
-  margin-top: 6px;
 }
 
 .order-form label,
@@ -430,14 +426,14 @@ a {
 }
 
 .lesson-section h1 {
-  margin: 0 auto 22px;
+  margin: 0 auto 32px;
   display: table;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #555;
-  padding: 0 36px 4px;
-  border-bottom: 2px solid #555;
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  color: #3f362f;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #3f362f;
+  text-align: center;
 }
 
 .lesson-intro,
@@ -602,7 +598,6 @@ input[type="radio"] {
 }
 
 .access-section {
-  width: min(980px, calc(100% - 48px));
   margin: 0 auto 34px;
   padding: 24px 0 0;
   color: #555;
@@ -610,14 +605,14 @@ input[type="radio"] {
 }
 
 .access-section h1 {
-  margin: 0 auto 16px;
+  margin: 0 auto 32px;
   display: inline-block;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #555;
-  padding: 0 36px 4px;
-  border-bottom: 2px solid #555;
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  color: #3f362f;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #3f362f;
+  text-align: center;
 }
 
 .access-shop-image {
@@ -632,9 +627,9 @@ input[type="radio"] {
 }
 
 .access-map {
-  width: min(680px, 100%);
-  height: 330px;
-  margin: 0 auto 28px;
+  width: 80%;
+  height: 990px;
+  margin: 48px auto 48px;
 }
 
 .access-map iframe {
@@ -644,14 +639,14 @@ input[type="radio"] {
 }
 
 .access-info {
-  width: min(520px, 100%);
+  width: 70%;
   margin: 0 auto;
   padding: 28px 20px 26px;
   background: #f9e8e8;
   border-radius: 28px;
   color: #555;
   text-align: left;
-  font-size: 16px;
+  font-size: 36px;
   line-height: 1.65;
 }
 
@@ -849,7 +844,7 @@ input[type="radio"] {
   }
 
   .order-section h1 {
-    font-size: 30px;
+    font-size: 48px;
   }
 
   .order-visual {
@@ -881,7 +876,7 @@ input[type="radio"] {
   }
 
   .lesson-section h1 {
-    font-size: 30px;
+    font-size: 48px;
   }
 
   .lesson-intro,
@@ -925,7 +920,7 @@ input[type="radio"] {
   }
 
   .access-section h1 {
-    font-size: 30px;
+    font-size: 48px;
   }
 
   .access-shop-image img {
@@ -946,10 +941,6 @@ input[type="radio"] {
     border-radius: 24px;
   }
 
-  .product-order-form {
-    padding: 20px 8px 10px;
-  }
-
   .custom-order-form {
     padding: 18px 10px 24px;
   }
@@ -958,31 +949,13 @@ input[type="radio"] {
     font-size: 22px;
   }
 
-  .product-order-form h2 {
-    font-size: 18px;
-  }
-
-  .order-product-summary p {
-    font-size: 24px;
-  }
-
   .order-form label,
   .order-form legend {
     font-size: 17px;
   }
 
-  .order-form.product-order-form label,
-  .order-form.product-order-form legend {
-    font-size: 16px;
-  }
-
   .checkbox-list {
     grid-template-columns: repeat(2, max-content);
-    gap: 2px 18px;
-  }
-
-  .product-order-form .checkbox-list {
-    grid-template-columns: repeat(3, max-content);
     gap: 2px 18px;
   }
 
