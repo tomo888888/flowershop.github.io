@@ -220,7 +220,7 @@ a {
   width: min(920px, 100%);
   min-height: 555px;
   margin: 0 auto;
-  padding: 64px 30px 66px;
+  padding: 20px 30px 34px;
   background:
     linear-gradient(rgba(252, 252, 252, 0.8), rgba(252, 252, 252, 0.8)),
     url("../images/order-21.png") center / cover no-repeat;
@@ -271,6 +271,48 @@ a {
   font-weight: 700;
   line-height: 1.35;
   text-align: center;
+}
+
+.product-order-form {
+  width: min(790px, 100%);
+  padding: 22px 14px 10px;
+}
+
+.product-order-form h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.order-product-summary {
+  margin: 0 0 10px;
+  color: white;
+}
+
+.order-product-summary p {
+  margin: 0 0 6px;
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+.order-product-summary span {
+  margin-left: 2px;
+}
+
+.order-form.product-order-form label,
+.order-form.product-order-form legend {
+  margin: 4px 0 1px;
+  font-size: 16px;
+}
+
+.order-form.product-order-form input[type="text"],
+.order-form.product-order-form input[type="tel"],
+.order-form.product-order-form input[type="email"] {
+  height: 31px;
+  padding: 2px 8px;
+}
+
+.product-order-form .form-actions {
+  margin-top: 6px;
 }
 
 .order-form label,
@@ -761,7 +803,7 @@ input[type="radio"] {
   }
 
   .order-visual {
-    padding: 44px 26px 48px;
+    padding: 20px 24px 34px;
   }
 
   .custom-order-visual {
@@ -812,7 +854,7 @@ input[type="radio"] {
 
   .order-visual {
     min-height: auto;
-    padding: 32px 14px 36px;
+    padding: 18px 12px 30px;
   }
 
   .custom-order-visual {
@@ -904,6 +946,10 @@ input[type="radio"] {
     border-radius: 24px;
   }
 
+  .product-order-form {
+    padding: 20px 8px 10px;
+  }
+
   .custom-order-form {
     padding: 18px 10px 24px;
   }
@@ -912,13 +958,31 @@ input[type="radio"] {
     font-size: 22px;
   }
 
+  .product-order-form h2 {
+    font-size: 18px;
+  }
+
+  .order-product-summary p {
+    font-size: 24px;
+  }
+
   .order-form label,
   .order-form legend {
     font-size: 17px;
   }
 
+  .order-form.product-order-form label,
+  .order-form.product-order-form legend {
+    font-size: 16px;
+  }
+
   .checkbox-list {
     grid-template-columns: repeat(2, max-content);
+    gap: 2px 18px;
+  }
+
+  .product-order-form .checkbox-list {
+    grid-template-columns: repeat(3, max-content);
     gap: 2px 18px;
   }
 

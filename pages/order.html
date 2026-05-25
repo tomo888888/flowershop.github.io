@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flower Garden - &#27880;&#25991;</title>
+  <title>Flower Garden - 注文</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <div class="hero-overlay"></div>
     <div class="site-header">
       <p class="site-title">Flower Garden</p>
-       <nav class="site-nav">
+      <nav class="site-nav">
         <a href="products.html">商品紹介</a>
         <a href="order.html">注文</a>
         <a href="lesson.html">教室</a>
@@ -26,17 +26,27 @@
       <h1>注文</h1>
 
       <div class="order-visual">
-        <form class="order-form" action="#" method="post">
+        <form class="order-form product-order-form" action="#" method="post">
           <h2>注文フォーム</h2>
+
+          <div class="order-product-summary">
+            <p>商品名:<span id="selected-product">〇〇〇〇</span></p>
+            <p>金　額:<span id="selected-price">〇〇〇〇</span></p>
+          </div>
+          <input type="hidden" id="item" name="item">
+          <input type="hidden" id="price" name="price">
 
           <label for="name">お名前</label>
           <input type="text" id="name" name="name">
 
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email">
+
           <label for="tel">電話番号</label>
           <input type="tel" id="tel" name="tel">
 
-          <label for="email">メールアドレス</label>
-          <input type="email" id="email" name="email">
+          <label for="pickup">受取日時</label>
+          <input type="text" id="pickup" name="pickup">
 
           <fieldset>
             <legend>用途</legend>
@@ -45,16 +55,10 @@
               <label><input type="checkbox" name="purpose" value="celebration"> お祝い</label>
               <label><input type="checkbox" name="purpose" value="mothers-day"> 母の日</label>
               <label><input type="checkbox" name="purpose" value="fathers-day"> 父の日</label>
-              <label><input type="checkbox" name="purpose" value="condolence"> お悔やみ</label>
-              <label class="other-purpose"><input type="checkbox" name="purpose" value="other"> その他</label>
+              <label><input type="checkbox" name="purpose" value="condolence"> お見舞い</label>
+              <label><input type="checkbox" name="purpose" value="other"> その他</label>
             </div>
           </fieldset>
-
-          <label for="pickup">受け取り日時</label>
-          <input type="text" id="pickup" name="pickup">
-
-          <label for="item">商品名</label>
-          <input type="text" id="item" name="item">
 
           <div class="form-actions">
             <button type="submit" class="order-submit">注文</button>
@@ -63,6 +67,36 @@
       </div>
     </section>
   </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const product = params.get('product');
+    const price = params.get('price');
+
+    if (product) {
+      document.getElementById('selected-product').textContent = product;
+      document.getElementById('item').value = product;
+    }
+
+    if (price) {
+      document.getElementById('selected-price').textContent = price;
+      document.getElementById('price').value = price;
+    }
+
+    document.querySelectorAll('input[name="purpose"]').forEach(checkbox => {
+      checkbox.addEventListener('change', function () {
+        if (!this.checked) {
+          return;
+        }
+
+        document.querySelectorAll('input[name="purpose"]').forEach(otherCheckbox => {
+          if (otherCheckbox !== this) {
+            otherCheckbox.checked = false;
+          }
+        });
+      });
+    });
+  </script>
 
   <footer class="site-footer">
     <div class="footer-brand">

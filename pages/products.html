@@ -228,6 +228,21 @@
     </section>
   </main>
 
+  <script>
+    document.querySelectorAll('.product-card .btn-primary').forEach(button => {
+      button.addEventListener('click', function () {
+        const card = this.closest('.product-card');
+        const productName = card.querySelector('h3').textContent.trim();
+        const productPrice = card.querySelector('.price').textContent.trim().replace(/^価格[：:]\s*/, '');
+        const params = new URLSearchParams({
+          product: productName,
+          price: productPrice
+        });
+        window.location.href = `order.html?${params.toString()}`;
+      });
+    });
+  </script>
+  
   <footer class="site-footer">
     <div class="footer-brand">
       <h2>Flower Garden</h2>
