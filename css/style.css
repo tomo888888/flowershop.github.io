@@ -230,6 +230,9 @@ a {
   width: min(920px, 100%);
   min-height: 0;
   padding: 18px 30px 66px;
+  background:
+    linear-gradient(rgba(252, 252, 252, 0.8), rgba(252, 252, 252, 0.8)),
+    url("../images/custom-1.png") center / cover no-repeat;
 }
 
 .custom-order-copy {
