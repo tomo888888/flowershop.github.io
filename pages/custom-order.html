@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Garden - &#12459;&#12473;&#12479;&#12512;&#27880;&#25991;</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="hero-section order-header">
+    <img class="hero-image" src="../images/top_background.png" alt="Flower Garden">
+    <div class="hero-overlay"></div>
+    <div class="site-header">
+      <p class="site-title">Flower Garden</p>
+      <nav class="site-nav">
+        <a href="products.html">商品紹介</a>
+        <a href="order.html">注文</a>
+        <a href="lesson.html">教室</a>
+        <a href="access.html">アクセス</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="order-section custom-order-section">
+      <h1>カスタム注文</h1>
+
+      <div class="order-visual custom-order-visual">
+        <div class="custom-order-copy">
+          <h2>花束、アレンジメント</h2>
+          <p>
+            季節のお花でご用意します。<br>
+            掲載している花束はすべてご希望に合わせてアレンジ可能です。<br>
+            「明るい色で」<br>
+            「ボリュームが欲しい」<br>
+            「予算に合わせて作ってほしい」など、<br>
+            どうぞお気軽にご相談ください。
+          </p>
+        </div>
+
+        <form class="order-form custom-order-form" action="#" method="post">
+          <h2>注文フォーム</h2>
+
+          <label for="custom-name">お名前</label>
+          <input type="text" id="custom-name" name="name">
+
+          <label for="custom-tel">電話番号</label>
+          <input type="tel" id="custom-tel" name="tel">
+
+          <label for="custom-email">メールアドレス</label>
+          <input type="email" id="custom-email" name="email">
+
+          <fieldset>
+            <legend>用途</legend>
+            <div class="checkbox-list">
+              <label><input type="checkbox" name="purpose" value="birthday"> 誕生日</label>
+              <label><input type="checkbox" name="purpose" value="celebration"> お祝い</label>
+              <label><input type="checkbox" name="purpose" value="mothers-day"> 母の日</label>
+              <label><input type="checkbox" name="purpose" value="fathers-day"> 父の日</label>
+              <label><input type="checkbox" name="purpose" value="condolence"> お悔やみ</label>
+              <label class="other-purpose"><input type="checkbox" name="purpose" value="other"> その他</label>
+            </div>
+          </fieldset>
+
+          <label for="custom-pickup">受け取り日時</label>
+          <input type="text" id="custom-pickup" name="pickup">
+
+          <label for="custom-budget">予算</label>
+          <input type="text" id="custom-budget" name="budget">
+
+          <label for="custom-request">ご要望</label>
+          <textarea id="custom-request" name="request"></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="order-submit">注文</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <h2>Flower Garden</h2>
+      <p>福岡市〇〇町</p>
+    </div>
+   <div class="footer-links">
+      <a href="products.html">商品紹介</a>
+      <a href="order.html">注文</a>
+      <a href="lesson.html">教室</a>
+      <a href="access.html">アクセス</a>
+    </div>
+    <div class="footer-map">
+      <iframe
+        src="https://www.google.com/maps?q=%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%BA%81&output=embed"
+        width="100%"
+        height="170"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </footer>
+</body>
+</html>
